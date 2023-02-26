@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("pexels-photo-1166209.jpeg");
+  background-size: cover;
+  background-position: full center;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* text align center paneb kõik teksti läbivalt keskele. flex align items/justify content mõjuvad ainult esimesele lapsele*/
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(36, 23, 23, 0.7);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #999292;
+  margin-top: 30px;
+
+  color: #f1e7e7;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus {
+  background-color: rgb(255, 255, 255, 0.6);
+  color: #333;
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 25px;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+}
